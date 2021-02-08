@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CryptoWatcher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a8b6def576.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <main class="mt-3">
+        <div class="container">
+            <section id="coinlist">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card text-white bg-dark">
+                            <div class="card-body">
+                                <form class="row g-2">
+                                    <div class="col-12">
+                                        <select id="coins" class="form-select form-select-sm">
+                                            <option selected disabled>Click here to open crypto list</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="number" name="amount" class="form-control form-control-sm" placeholder="Amount">
+                                    </div>
+                                    <div class="col-12">
+                                        <button id="addnew" type="button" class="btn btn-primary btn-sm">Add & Watch</button>
+                                    </div>
+                                </form>
+                                <i class="text-muted">Your list refreshes every 5 minutes.</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="bg-white">
+            <section id="list"></section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p id="apitime" class="text-center text-muted fst-italic"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

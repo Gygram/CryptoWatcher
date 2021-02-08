@@ -1,0 +1,22 @@
+{
+  "name": "CryptoWatcher",
+  "version": "0.0.1",
+  "description": "Watches your crypto balance.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . CryptoWatcher"
+  },
+  "keywords": [],
+  "author": "Gygram",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "jquery": "^3.5.1",
+    "node-json-file-storage": "^1.1.0"
+  }
+}
